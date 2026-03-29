@@ -10,4 +10,4 @@ Uma página detalhando uma receita de Cupcake, focada em estruturação de texto
 
 ### 2. Portfólio Fullstack (Atividade 02)
 Atividade em conjunto para simular um portfólio baseado no exemplo exposto.
-* **🔗 [Acessar Portfólio Completo](https://ordinary-traveler.github.io/WebPageAtv/unidade_01_atividade_02/Portfolio-Sueli-Raquel_GuilhermeLadeia/)**
+* **🔗 [Acessar Portfólio Completo](https://ordinary-traveler.github.io/WebPageAtv/unidade_01_atividade_02/Portifolio-Sueli-Raquel_GuilhermeLadeia/)**
