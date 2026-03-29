@@ -6,7 +6,7 @@ Este repositório reúne os projetos e atividades práticos desenvolvidos para a
 
 ### 1. Página de Receitas (Atividade 01)
 Uma pagina detalhando uma receita de Cupcake, focada em estruturação de texto e listas.
-* **🔗 [Acessar Página de Receitas](https://ordinary-traveler.github.io/Cupcake-Sueli-Raquel_GuilhermeLadeia/)**
+* **🔗 [Acessar Página de Receitas](https://ordinary-traveler.github.io/WebPageAtv/Cupcake-Sueli-Raquel_GuilhermeLadeia/)**
 
 ### 2. Portfólio Fullstack (Atividade 02)
 Atividade em conjunto para simular um portifolio baseado no exemplo exposto.
