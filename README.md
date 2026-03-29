@@ -2,9 +2,7 @@
 
 Este repositório reúne os projetos e atividades práticos desenvolvidos para a disciplina de Desenvolvimento Web I.
 
-## 📂 Projetos em Destaque
-
-Abaixo, você pode acessar a versão "live" de cada seção apresentada:
+## 📂 Projetos
 
 ### 1. Página de Receitas (Atividade 01)
 Uma pagina detalhando uma receita de Cupcake, focada em estruturação de texto e listas.
