@@ -5,9 +5,9 @@ Este repositório reúne os projetos e atividades práticos desenvolvidos para a
 ## 📂 Projetos
 
 ### 1. Página de Receitas (Atividade 01)
-Uma pagina detalhando uma receita de Cupcake, focada em estruturação de texto e listas.
+Uma página detalhando uma receita de Cupcake, focada em estruturação de texto e listas.
 * **🔗 [Acessar Página de Receitas](https://ordinary-traveler.github.io/WebPageAtv/Cupcake-Sueli-Raquel_GuilhermeLadeia/)**
 
 ### 2. Portfólio Fullstack (Atividade 02)
-Atividade em conjunto para simular um portifolio baseado no exemplo exposto.
-* **🔗 [Acessar Portfólio Completo](https://ordinary-traveler.github.io/WebPageAtv;unidade_01_atividade_02/Portufolio-Sueli-Raquel_GuilhermeLadeia/)**
+Atividade em conjunto para simular um portfólio baseado no exemplo exposto.
+* **🔗 [Acessar Portfólio Completo](https://ordinary-traveler.github.io/WebPageAtv/unidade_01_atividade_02/Portfolio-Sueli-Raquel_GuilhermeLadeia/)**
