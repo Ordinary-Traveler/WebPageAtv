@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    flex-wrap: wrap; /* Importante para dispositivos móveis */
+    flex-wrap: wrap; 
     gap: 30px;
 }
 
@@ -58,7 +58,8 @@
 
 .social-icons img {
     width: 24px;
-    filter: brightness(0) invert(1); /* Deixa ícones pretos em branco */
+    filter: brightness(0) invert(1);
+    transition: 0.3s;
 }
 
 .footer-bottom {
