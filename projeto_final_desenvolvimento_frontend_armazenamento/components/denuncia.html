@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denúncia - S.O.S Mulher</title>
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/denuncia.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <script src="../assets/js/include.js" defer></script>
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <main class="main-content">
+        <section class="secao-emergencia">
+            <h1>Canais de Denúncia</h1>
+            <p class="subtitulo">Sua identidade pode ser preservada. O importante é romper o ciclo.</p>
+            
+            <div class="cards-emergencia">
+                <div class="card-numero ligar-180">
+                    <h2>180</h2>
+                    <p>Central de Atendimento à Mulher</p>
+                    <span>Orientações e denúncias (24h)</span>
+                    <a href="tel:180" class="btn-ligar">Ligar Agora</a>
+                </div>
+
+                <div class="card-numero ligar-190">
+                    <h2>190</h2>
+                    <p>Polícia Militar</p>
+                    <span>Para situações de risco imediato</span>
+                    <a href="tel:190" class="btn-ligar">Ligar Agora</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="card-texto-emergencia">
+            <div class="conteudo-texto">
+                <h3>Pedido de Socorro por Texto</h3>
+                <p>Use esta opção se não puder falar no momento. Suas mensagens são seguras.</p>
+            </div>
+            <div class="botoes-texto">
+                <a href="https://wa.me/556196100180" target="_blank" class="btn-whatsapp">
+                    <img src="../assets/img/icon/whatsapp-icon.png" alt=""> Denunciar via WhatsApp
+                </a>
+                <button class="btn-msg-rapida" onclick="enviarSocorro()">Enviar Mensagem de Socorro</button>
+            </div>
+        </div>
+
+        <section class="orientacoes-denuncia">
+            <div class="conteudo-box">
+                <h3>O que informar na hora da denúncia?</h3>
+                <ul>
+                    <li><strong>Endereço completo:</strong> Facilite a chegada da viatura.</li>
+                    <li><strong>Ponto de referência:</strong> Prédios, lojas ou praças próximas.</li>
+                    <li><strong>Características:</strong> Descrição física do agressor e se há armas.</li>
+                    <li><strong>Histórico:</strong> Informe se já houve agressões anteriores.</li>
+                </ul>
+            </div>
+
+            <div class="conteudo-box">
+                <h3>Denúncia Anônima</h3>
+                <p>Você pode realizar a denúncia pelo <strong>Disque 100</strong> ou pelo aplicativo <strong>Direitos Humanos Brasil</strong>. Não é necessário se identificar para que a polícia investigue o caso.</p>
+                <div class="alerta-seguranca">
+                    <p><strong>Atenção:</strong> Se estiver em perigo agora, priorize o 190.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div data-include="../components/footer.html"></div>
+
+    <a href="https://www.google.com" class="btn-saida-rapida">SAÍDA RÁPIDA</a>
+</body>
+</html>

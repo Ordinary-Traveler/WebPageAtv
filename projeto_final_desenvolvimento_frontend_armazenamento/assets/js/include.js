@@ -15,3 +15,11 @@ document.addEventListener("DOMContentLoaded", function() {
             .catch(err => console.error(err));
     });
 });
+
+function enviarSocorro() {
+    const confirmacao = confirm("Deseja enviar um pedido de socorro silencioso com sua localização atual?");
+    if (confirmacao) {
+        alert("Pedido enviado com sucesso. Mantenha a calma, a ajuda está a caminho.");
+        // Aqui você integraria com uma API de envio de SMS ou E-mail
+    }
+}

@@ -1,0 +1,83 @@
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+h1 {
+    color: #480544;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.videos-conteiner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.videos-box {
+    position: relative;
+    padding-bottom: 56.25%; /* Proporção 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.videos-box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* O container que segura as duas colunas */
+.conteudo-conteiner {
+    display: flex !important; /* Força o flexbox */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch !important; /* Força a altura igual */
+    gap: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+/* Seleciona tanto a .conteudo-box quanto a div vizinha dela */
+.conteudo-conteiner > div, 
+.conteudo-box {
+    flex: 1;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 6px solid #480544;
+    
+    /* Importante para o conteúdo interno */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajuste das listas para não vazarem da caixa */
+.conteudo-conteiner ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.conteudo-conteiner li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.alerta-ajuda {
+    margin-top: auto; /* Empurra o parágrafo para o final da caixa */
+    padding: 10px;
+    background-color: #fff0f0;
+    border-radius: 5px;
+    color: #b00020;
+    font-weight: bold;
+    font-size: 0.9rem;
+}

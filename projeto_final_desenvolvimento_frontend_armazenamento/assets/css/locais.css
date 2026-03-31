@@ -1,0 +1,74 @@
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    color: #480544;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Estilo do Mapa */
+.mapa-conteiner {
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 40px;
+}
+
+/* Grid de Locais */
+.locais-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Estilo dos Cards (Baseado na sua Home) */
+.local-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-top: 5px solid #480544;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.local-card h3 {
+    color: #480544;
+    margin-bottom: 15px;
+}
+
+.local-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+/* Botão de Ação */
+.btn-mapa {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #480544;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-mapa:hover {
+    background-color: #6a0b64;
+}
+
+/* Destaque para assistência social */
+.destaque-cras {
+    border-top-color: #b00020; /* Vermelho para diferenciar */
+}
