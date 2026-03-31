@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main-panel {
+    width: 100%;
+    display: block;
+    height: auto;
+    max-height: 500px; 
+    object-fit: cover; 
+}
+
+
+.main-conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr; 
+    gap: 30px;
+    padding: 20px;
+    align-items: stretch; 
+}
+
+.main-panel {
+    grid-column: 1 / -1; 
+}
+
+.noticias-conteiner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.noticias-box {
+    background-color: #ffffff; 
+    border-radius: 8px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.noticias-box:hover {
+    transform: translateY(-5px); 
+}
+
+.noticias-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; 
+}
+
+.noticias-box p {
+    padding: 15px;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.alerta {
+    background-color: #fcf4ff; 
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 6px solid #480544;
+    height: 100%;
+    grid-row: 2 / 3; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.alerta h4 {
+    color: #480544;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.alerta p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.funcoes-conteiner {
+    grid-column: 1 / -1; 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.funcoes-box span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #eee;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.funcoes-box button {
+    margin-top: 10px;
+    background-color: #480544;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
