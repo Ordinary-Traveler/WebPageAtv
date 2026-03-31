@@ -1,0 +1,169 @@
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.introducao-relatos {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    color: #480544;
+    margin-bottom: 15px;
+}
+
+.btn-enviar-relato {
+    background-color: #480544;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-enviar-relato:hover {
+    background-color: #6a0b64;
+    transform: scale(1.05);
+}
+
+/* Grid de Relatos */
+.relatos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.relato-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid #480544;
+    display: flex;
+    flex-direction: column;
+}
+
+.relato-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+.user-anonimo {
+    font-weight: bold;
+    color: #480544;
+}
+
+.relato-card p {
+    font-style: italic;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.tag-superacao {
+    align-self: flex-start;
+    background: #f3e5f5;
+    color: #480544;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.sessao-envio {
+    display: flex;
+    gap: 40px;
+    align-items: stretch; /* Mantém o alinhamento que você gostou */
+    margin-bottom: 60px;
+}
+
+.introducao-relatos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulario-box {
+    flex: 1.5;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-left: 8px solid #480544; /* Mantendo o padrão das caixas de texto */
+}
+
+.formulario-box h3 {
+    color: #480544;
+    margin-bottom: 20px;
+}
+
+.input-grupo {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #480544;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+    margin-bottom: 15px;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.aviso-privacidade {
+    font-size: 0.8rem;
+    color: #666;
+    line-height: 1.3;
+}
+
+.btn-enviar {
+    background-color: #480544;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    white-space: nowrap;
+}
+
+.btn-enviar:hover {
+    background-color: #6a0b64;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    .sessao-envio {
+        flex-direction: column;
+    }
+}

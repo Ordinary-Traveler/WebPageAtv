@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatos - S.O.S Mulher</title>
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/relatos.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <script src="../assets/js/include.js" defer></script>
+</head>
+<body>
+    <div data-include="../components/header.html"></div>
+
+    <main class="main-content">
+        <section class="sessao-envio">
+            <div class="introducao-relatos">
+                <h1>Relatos de Superação</h1>
+                <p>Seu depoimento pode ser a força que outra mulher precisa para romper o ciclo. O envio é totalmente anônimo.</p>
+            </div>
+
+            <div class="formulario-box">
+                <h3>Compartilhe sua história</h3>
+                <form id="formRelato">
+                    <div class="input-grupo">
+                        <input type="text" placeholder="Nome ou Apelido (Opcional)" id="nome">
+                        <input type="text" placeholder="Sua Idade (Opcional)" id="idade">
+                    </div>
+                    
+                    <textarea placeholder="Escreva seu relato aqui... Fique à vontade para contar sua história de superação." required></textarea>
+                    
+                    <div class="form-footer">
+                        <p class="aviso-privacidade">🔒 Seu relato passará por uma moderação antes de ser publicado para garantir a segurança de todas.</p>
+                        <button type="submit" class="btn-enviar">Publicar Relato</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <div class="relatos-grid">
+            <article class="relato-card">
+                <div class="relato-header">
+                    <span class="user-anonimo">M.S., 34 anos</span>
+                    <span class="data-relato">15/03/2026</span>
+                </div>
+                <p>"Depois de anos sofrendo violência psicológica, as dicas de prevenção deste site me ajudaram a identificar os sinais. Hoje estou segura e recomeçando minha vida."</p>
+                <div class="tag-superacao">Superação</div>
+            </article>
+
+            <article class="relato-card">
+                <div class="relato-header">
+                    <span class="user-anonimo">Anônima</span>
+                    <span class="data-relato">10/03/2026</span>
+                </div>
+                <p>"O medo me paralisava, mas ao ver os locais de apoio em Nova Ipixuna, tomei coragem para buscar o CRAS. O acolhimento foi o primeiro passo para minha liberdade."</p>
+                <div class="tag-superacao">Coragem</div>
+            </article>
+
+            <article class="relato-card">
+                <div class="relato-header">
+                    <span class="user-anonimo">J.L., 28 anos</span>
+                    <span class="data-relato">05/03/2026</span>
+                </div>
+                <p>"O botão de denúncia por texto salvou minha vida. Eu não podia falar, mas consegui pedir ajuda silenciosamente. Gratidão por este canal."</p>
+                <div class="tag-superacao">Apoio</div>
+            </article>
+        </div>
+    </main>
+
+    <div data-include="../components/footer.html"></div>
+
+    document.getElementById('formRelato').addEventListener('submit', function(event) {
+        event.preventDefault(); // Impede a página de recarregar
+
+        // Simulação de envio
+        const botao = document.querySelector('.btn-enviar');
+        botao.textContent = "Enviando...";
+        botao.disabled = true;
+
+        setTimeout(() => {
+            alert("Obrigada por compartilhar sua história! Seu relato foi enviado para moderação e aparecerá no mural em breve.");
+            
+            // Limpa o formulário
+            this.reset();
+            
+            // Volta o botão ao normal
+            botao.textContent = "Publicar Relato";
+            botao.disabled = false;
+        }, 1500);
+    });
+</body>
+</html>

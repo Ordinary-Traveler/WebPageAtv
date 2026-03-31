@@ -1,0 +1,124 @@
+.main-content {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.sobre-container {
+    display: flex;
+    gap: 50px;
+    align-items: stretch; /* Mantendo as caixas com a mesma altura */
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h1 {
+    color: #480544;
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+}
+
+.sobre-texto p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.valores {
+    margin-top: 30px;
+}
+
+.valor-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    background: #fdfafc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.sobre-card {
+    flex: 0.8;
+    background: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border-top: 8px solid #480544;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-sobre {
+    width: 80px;
+    margin: 0 auto 20px;
+}
+
+.alerta-box {
+    margin-top: 25px;
+    background: #fff0f0;
+    padding: 15px;
+    border-radius: 8px;
+    color: #b00020;
+    font-size: 0.9rem;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+    .sobre-container {
+        flex-direction: column;
+    }
+}
+
+.creditos-desenvolvimento {
+    background-color: #f9f9f9; /* Um tom bem claro para separar do conteúdo */
+    padding: 30px 0;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.container-creditos p {
+    color: #480544;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.dev-nomes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dev-card {
+    background: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #555;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    border: 1px solid #48054433; /* Borda roxa bem clarinha */
+    transition: 0.3s;
+}
+
+.dev-card:hover {
+    background: #480544;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* Garante que no celular os nomes não fiquem colados */
+@media (max-width: 600px) {
+    .dev-nomes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
