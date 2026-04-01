@@ -1,28 +1,37 @@
-// Carregar relatos do LocalStorage
 function carregarRelatos() {
     const relatos = JSON.parse(localStorage.getItem("relatos")) || [];
     const lista = document.getElementById("lista-relatos");
     lista.innerHTML = "";
 
-    relatos.forEach((r, i) => {
-        const card = document.createElement("article");
-        card.classList.add("relato-card");
-        card.innerHTML = `
-            <div class="relato-header">
-                <span class="user-anonimo"><strong>${r.nome || "Anônima"}</strong>${r.idade ? ", " + r.idade + " anos" : ""}</span>
-                <span class="data-relato">${r.data}</span>
-            </div>
-            <p class="relato-texto">"${r.texto}"</p>
-            <div class="relato-footer-acoes">
-                <span class="tag-superacao">Superação</span>
-                <div class="botoes-adm">
-                    <button class="btn-editar" onclick="editarRelato(${i})">Editar</button>
-                    <button class="btn-excluir" onclick="deletarRelato(${i})">Excluir</button>
+    if (relatos.length === 0) return;
+
+    // Criamos um "palco" para o movimento
+    const scrollTrack = document.createElement("div");
+    scrollTrack.classList.add("scroll-track");
+
+    // Função para criar o card
+    const criarCard = (r, i) => {
+        return `
+            <article class="relato-card">
+                <div class="relato-header">
+                    <span class="user-anonimo"><strong>${r.nome || "Anônima"}</strong>${r.idade ? ", " + r.idade + " anos" : ""}</span>
+                    <span class="data-relato">${r.data}</span>
                 </div>
-            </div>
+                <p class="relato-texto">"${r.texto}"</p>
+                <div class="relato-footer-acoes">
+                    <span class="tag-superacao">Superação</span>
+                </div>
+            </article>
         `;
-        lista.appendChild(card);
-    });
+    };
+
+    // Para o loop ser infinito, precisamos de pelo menos dois conjuntos de cards
+    const conteudoCards = relatos.map((r, i) => criarCard(r, i)).join('');
+    
+    // Inserimos duas vezes para criar a ilusão de continuidade
+    scrollTrack.innerHTML = conteudoCards + conteudoCards;
+    
+    lista.appendChild(scrollTrack);
 }
 
 // No seu arquivo relatos.js

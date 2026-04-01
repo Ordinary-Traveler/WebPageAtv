@@ -113,16 +113,6 @@ h1 {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    .btn-saida-rapida {
-        bottom: 15px;
-        right: 15px;
-        padding: 10px 15px;
-        font-size: 0.75rem;
-        opacity: 0.9;
-    }
-}
-
 .card-texto-emergencia {
     display: flex;
     justify-content: space-between;
@@ -172,6 +162,10 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    .orientacoes-denuncia {
+        flex-direction: column;
+        grid-template-columns: 1fr;
+    }
     .cards-emergencia {
         flex-direction: column;
     }
