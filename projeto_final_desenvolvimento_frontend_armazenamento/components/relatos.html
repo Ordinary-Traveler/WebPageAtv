@@ -21,13 +21,12 @@
 
             <div class="formulario-box">
                 <h3>Compartilhe sua história</h3>
-                <form id="formRelato">
-                    <div class="input-grupo">
+                <form id="formRelato"> <div class="input-grupo">
                         <input type="text" placeholder="Nome ou Apelido (Opcional)" id="nome">
                         <input type="text" placeholder="Sua Idade (Opcional)" id="idade">
                     </div>
                     
-                    <textarea placeholder="Escreva seu relato aqui... Fique à vontade para contar sua história de superação." required></textarea>
+                    <textarea id="texto" placeholder="Escreva seu relato aqui... Fique à vontade para contar sua história de superação." required></textarea>
                     
                     <div class="form-footer">
                         <p class="aviso-privacidade">🔒 Seu relato passará por uma moderação antes de ser publicado para garantir a segurança de todas.</p>
@@ -37,55 +36,13 @@
             </div>
         </section>
 
-        <div class="relatos-grid">
-            <article class="relato-card">
-                <div class="relato-header">
-                    <span class="user-anonimo">M.S., 34 anos</span>
-                    <span class="data-relato">15/03/2026</span>
-                </div>
-                <p>"Depois de anos sofrendo violência psicológica, as dicas de prevenção deste site me ajudaram a identificar os sinais. Hoje estou segura e recomeçando minha vida."</p>
-                <div class="tag-superacao">Superação</div>
-            </article>
-
-            <article class="relato-card">
-                <div class="relato-header">
-                    <span class="user-anonimo">Anônima</span>
-                    <span class="data-relato">10/03/2026</span>
-                </div>
-                <p>"O medo me paralisava, mas ao ver os locais de apoio em Nova Ipixuna, tomei coragem para buscar o CRAS. O acolhimento foi o primeiro passo para minha liberdade."</p>
-                <div class="tag-superacao">Coragem</div>
-            </article>
-
-            <article class="relato-card">
-                <div class="relato-header">
-                    <span class="user-anonimo">J.L., 28 anos</span>
-                    <span class="data-relato">05/03/2026</span>
-                </div>
-                <p>"O botão de denúncia por texto salvou minha vida. Eu não podia falar, mas consegui pedir ajuda silenciosamente. Gratidão por este canal."</p>
-                <div class="tag-superacao">Apoio</div>
-            </article>
-        </div>
+        <div id="lista-relatos" class="relatos-grid"></div>
     </main>
 
     <div data-include="../components/footer.html"></div>
 
     <a href="https://www.sephora.com.br" class="btn-saida-rapida" title="Sair rapidamente">SAÍDA RÁPIDA</a>
 
-    <script>
-        document.getElementById('formRelato').addEventListener('submit', function(event) {
-            event.preventDefault(); // Impede a página de recarregar
-            
-            const botao = document.querySelector('.btn-enviar');
-            botao.textContent = "Enviando...";
-            botao.disabled = true;
-
-            setTimeout(() => {
-                alert("Obrigada por compartilhar sua história! Seu relato foi enviado para moderação e aparecerá no mural em breve.");
-                this.reset(); // Limpa o formulário
-                botao.textContent = "Publicar Relato";
-                botao.disabled = false;
-            }, 1500);
-        });
-    </script>
+    <script src="../assets/js/relatos.js" defer></script>
 </body>
 </html>
