@@ -67,3 +67,42 @@
     background-color: #c2185b;
     color: white !important;
 }
+
+.nav-bar-conteiner {
+    background-color: #480544;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2); 
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease; 
+    padding: 5px 8px;
+}
+
+/* Media Query para Celulares (telas até 768px) */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column; /* Logo em cima, links embaixo */
+        padding: 15px;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap; /* Links quebram linha se não couberem */
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.9rem; /* Diminui um pouco a letra */
+    }
+}

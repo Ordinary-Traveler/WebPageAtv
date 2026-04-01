@@ -7,7 +7,7 @@
 .sobre-container {
     display: flex;
     gap: 50px;
-    align-items: stretch; /* Mantendo as caixas com a mesma altura */
+    align-items: stretch;
 }
 
 .sobre-texto {
@@ -76,7 +76,7 @@
 }
 
 .creditos-desenvolvimento {
-    background-color: #f9f9f9; /* Um tom bem claro para separar do conteúdo */
+    background-color: #f9f9f9;
     padding: 30px 0;
     border-top: 1px solid #eee;
     text-align: center;
@@ -105,7 +105,7 @@
     font-size: 0.9rem;
     color: #555;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    border: 1px solid #48054433; /* Borda roxa bem clarinha */
+    border: 1px solid #48054433;
     transition: 0.3s;
 }
 
@@ -115,10 +115,41 @@
     transform: translateY(-3px);
 }
 
-/* Garante que no celular os nomes não fiquem colados */
 @media (max-width: 600px) {
     .dev-nomes {
         flex-direction: column;
         align-items: center;
+    }
+}
+
+.btn-saida-rapida {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333; 
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    z-index: 10000; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    border: 2px solid #555;
+}
+
+.btn-saida-rapida:hover {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .btn-saida-rapida {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 15px;
+        font-size: 0.75rem;
+        opacity: 0.9;
     }
 }

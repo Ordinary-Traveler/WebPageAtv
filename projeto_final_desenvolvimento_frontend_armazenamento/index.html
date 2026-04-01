@@ -14,7 +14,23 @@
     <script src="assets/js/include.js" defer></script>
 </head>
 <body>
-    <div data-include="components/header.html"></div>
+    <header class="nav-bar-conteiner">
+        <nav class="nav-bar">
+            <div class="logo-box">
+                <img src="assets/img/icon/rosto.png" alt="Ícone S.O.S Mulher" class="logo-img">
+                <p>S.O.S Mulher</p>
+            </div>
+
+            <div class="nav-links">
+                <a href="index.html">Início</a>
+                <a href="components/sobre.html">Sobre</a>
+                <a href="components/dicas.html">Dicas</a>
+                <a href="components/locais-de-apoio.html">Locais de Apoio</a>
+                <a href="components/relatos.html">Relatos</a>
+                <a href="components/denuncia.html" class="destaque-texto">Denúncia</a>
+            </div>
+        </nav>
+    </header>
     
     <main class="main-conteiner">
         <img src="assets/img/panel/main-panel.png" alt="" class="main-panel">
@@ -61,7 +77,7 @@
                 <span>
                     <img src="assets/img/icon/mapa.png" alt=""> Locais de Apoio
                     <p>Encontre locais de apoio e emergência</p>
-                    <a href="#"><button>Ver Locais</button></a>
+                    <a href="components/locais-de-apoio.html"><button>Ver Locais</button></a>
                 </span>
             </div>
 
@@ -69,7 +85,7 @@
                 <span>
                     <img src="assets/img/icon/livro-aberto.png" alt=""> Relatos
                     <p>Veja o relato de outras mulheres</p>
-                    <a href="#"><button>Ver relatos</button></a>
+                    <a href="components/relatos.html"><button>Ver relatos</button></a>
                 </span>
             </div>
 
@@ -77,7 +93,7 @@
                 <span>
                     <img src="assets/img/icon/comentario.png" alt=""> Denúncia
                     <p>Sabe de uma mulher que precise de ajuda?</p>
-                    <a href="#"><button>Denúncie</button></a>
+                    <a href="components/denuncia.html"><button>Denúncie</button></a>
                 </span>
             </div>
 
@@ -85,12 +101,53 @@
                 <span>
                     <img src="assets/img/icon/caderno.png" alt=""> Dicas de Prevenção
                     <p>Fique atenta aos sinais.</p>
-                    <a href="#"><button>Ver dicas</button></a>
+                    <a href="components/dicas.html"><button>Ver dicas</button></a>
                 </span>
             </div>
         </div>
     </main>
 
-    <div data-include="components/footer.html"></div>
+    <footer class="footer-container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>S.O.S Mulher</h3>
+                <p>Apoio, segurança e informação para todas.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Informações adicionais</h4>
+                <a href="components/sobre.html">Sobre nós</a>
+                <a href="#">Termos de uso</a>
+                <a href="#">Política de Privacidade</a>
+            </div>
+
+            <div class="footer-social">
+                <h4>Conecte-se</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="assets/img/icon/instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/img/icon/whatsapp.png" alt="WhatsApp"></a>
+                    <a href="#"><img src="assets/img/icon/mail.png" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 S.O.S Mulher - Todos os direitos reservados.</p>
+        </div>
+
+        <section class="creditos-finais">
+            <div class="dev-container">
+                <p>Desenvolvido com dedicação por:</p>
+                <div class="nomes">
+                    <span>Sueli Passos;</span>
+                    <span>Raquel Prates;</span>
+                    <span>Guilherme Ladeia; e</span>
+                    <span>Hylton Gabriel</span>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <a href="https://www.sephora.com.br" class="btn-saida-rapida" title="Sair rapidamente">SAÍDA RÁPIDA</a>
 </body>
 </html>

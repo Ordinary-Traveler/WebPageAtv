@@ -69,24 +69,23 @@
 
     <div data-include="../components/footer.html"></div>
 
-    document.getElementById('formRelato').addEventListener('submit', function(event) {
-        event.preventDefault(); // Impede a página de recarregar
+    <a href="https://www.sephora.com.br" class="btn-saida-rapida" title="Sair rapidamente">SAÍDA RÁPIDA</a>
 
-        // Simulação de envio
-        const botao = document.querySelector('.btn-enviar');
-        botao.textContent = "Enviando...";
-        botao.disabled = true;
+    <script>
+        document.getElementById('formRelato').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede a página de recarregar
+            
+            const botao = document.querySelector('.btn-enviar');
+            botao.textContent = "Enviando...";
+            botao.disabled = true;
 
-        setTimeout(() => {
-            alert("Obrigada por compartilhar sua história! Seu relato foi enviado para moderação e aparecerá no mural em breve.");
-            
-            // Limpa o formulário
-            this.reset();
-            
-            // Volta o botão ao normal
-            botao.textContent = "Publicar Relato";
-            botao.disabled = false;
-        }, 1500);
-    });
+            setTimeout(() => {
+                alert("Obrigada por compartilhar sua história! Seu relato foi enviado para moderação e aparecerá no mural em breve.");
+                this.reset(); // Limpa o formulário
+                botao.textContent = "Publicar Relato";
+                botao.disabled = false;
+            }, 1500);
+        });
+    </script>
 </body>
 </html>

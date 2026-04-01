@@ -60,6 +60,7 @@
     color: #333;
     line-height: 1.4;
     font-weight: 500;
+    flex: 1;
 }
 
 .alerta {
@@ -106,11 +107,75 @@
 }
 
 .funcoes-box button {
-    margin-top: 10px;
+    margin-top: 15px;
     background-color: #480544;
     color: white;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.funcoes-box button:hover {
+    background-color: #6a0b64;
+    transform: scale(1.05); 
+}
+
+.funcoes-box img {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .main-conteiner {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
+    .noticias-conteiner {
+        grid-template-columns: 1fr; 
+    }
+
+    .funcoes-conteiner {
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px;
+    }
+    
+    .main-panel {
+        max-height: 250px; 
+    }
+}
+
+.btn-saida-rapida {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333; 
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    z-index: 10000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    border: 2px solid #555;
+}
+
+.btn-saida-rapida:hover {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .btn-saida-rapida {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 15px;
+        font-size: 0.75rem;
+        opacity: 0.9;
+    }
 }

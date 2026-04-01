@@ -68,7 +68,38 @@ h1 {
     background-color: #6a0b64;
 }
 
-/* Destaque para assistência social */
 .destaque-cras {
-    border-top-color: #b00020; /* Vermelho para diferenciar */
+    border-top-color: #b00020;
+}
+
+.btn-saida-rapida {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333; 
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    z-index: 10000; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    border: 2px solid #555;
+}
+
+.btn-saida-rapida:hover {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .btn-saida-rapida {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 15px;
+        font-size: 0.75rem;
+        opacity: 0.9; 
+    }
 }

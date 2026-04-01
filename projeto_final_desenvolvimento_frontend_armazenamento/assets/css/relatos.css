@@ -82,7 +82,7 @@ h1 {
 .sessao-envio {
     display: flex;
     gap: 40px;
-    align-items: stretch; /* Mantém o alinhamento que você gostou */
+    align-items: stretch;
     margin-bottom: 60px;
 }
 
@@ -99,7 +99,7 @@ h1 {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    border-left: 8px solid #480544; /* Mantendo o padrão das caixas de texto */
+    border-left: 8px solid #480544; 
 }
 
 .formulario-box h3 {
@@ -161,9 +161,44 @@ textarea {
     background-color: #6a0b64;
 }
 
-/* Responsividade para celulares */
 @media (max-width: 768px) {
-    .sessao-envio {
+    .sessao-envio, .sobre-container, .orientacoes-denuncia {
         flex-direction: column;
+    }
+
+    .conteudo-box, .formulario-box, .sobre-card {
+        width: 100%;
+    }
+}
+
+.btn-saida-rapida {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    z-index: 10000; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    border: 2px solid #555;
+}
+
+.btn-saida-rapida:hover {
+    background-color: #000;
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .btn-saida-rapida {
+        bottom: 15px;
+        right: 15px;
+        padding: 10px 15px;
+        font-size: 0.75rem;
+        opacity: 0.9;
     }
 }

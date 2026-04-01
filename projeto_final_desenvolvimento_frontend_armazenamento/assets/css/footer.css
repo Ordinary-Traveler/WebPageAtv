@@ -70,3 +70,11 @@
     font-size: 0.75rem;
     color: #aaa;
 }
+
+.creditos-finais {
+    padding: 20px;
+    background-color: #31022d; /* Tom mais escuro do seu roxo */
+    color: white;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
