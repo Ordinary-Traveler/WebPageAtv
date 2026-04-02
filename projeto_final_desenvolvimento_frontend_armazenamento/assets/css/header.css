@@ -87,22 +87,21 @@
     padding: 5px 8px;
 }
 
-/* Media Query para Celulares (telas até 768px) */
 @media (max-width: 768px) {
     .nav-bar {
-        flex-direction: column; /* Logo em cima, links embaixo */
+        flex-direction: column; 
         padding: 15px;
     }
 
     .nav-links {
         width: 100%;
         justify-content: center;
-        flex-wrap: wrap; /* Links quebram linha se não couberem */
+        flex-wrap: wrap; 
         gap: 10px;
         margin-top: 15px;
     }
 
     .nav-links a {
-        font-size: 0.9rem; /* Diminui um pouco a letra */
+        font-size: 0.9rem;
     }
 }

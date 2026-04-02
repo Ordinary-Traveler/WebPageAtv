@@ -184,12 +184,6 @@ textarea {
     margin-bottom: 20px;
 }
 
-.relato-footer-acoes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .tag-superacao {
     background: #fdf4ff;
     color: #480544;
@@ -199,44 +193,28 @@ textarea {
     font-weight: bold;
 }
 
-.botoes-adm button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 0.8rem;
-    margin-left: 10px;
-    text-decoration: underline;
-}
-
-.btn-editar { color: #480544; }
-.btn-excluir { color: #b00020; }
-
-/* Container principal da lista */
 .relatos-grid {
     width: 100%;
-    overflow: hidden; /* Esconde o que sai da tela */
+    overflow: hidden; 
     padding: 40px 0;
     position: relative;
     background: transparent;
 }
 
-/* O trilho que se move */
 .scroll-track {
     display: flex;
-    width: max-content; /* Ajusta ao tamanho real dos cards */
+    width: max-content; 
     gap: 30px;
-    animation: roletaInfinita 40s linear infinite; /* 40s é a velocidade */
+    animation: roletaInfinita 40s linear infinite;
 }
 
-/* Pausa a roleta quando o usuário passa o mouse para ler */
 .scroll-track:hover {
     animation-play-state: paused;
 }
 
-/* Estilização do Card para caber na roleta */
 .relato-card {
-    width: 350px; /* Largura fixa para manter o padrão */
-    flex-shrink: 0; /* Impede que o card amasse */
+    width: 350px; 
+    flex-shrink: 0; 
     background: #fff;
     padding: 25px;
     border-radius: 20px;
@@ -250,7 +228,7 @@ textarea {
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%); /* Move exatamente metade do conteúdo duplicado */
+        transform: translateX(-50%); 
     }
 }
 
@@ -260,6 +238,42 @@ textarea {
         width: 280px;
     }
     .scroll-track {
-        animation-duration: 25s; /* Um pouco mais rápido em telas menores */
+        animation-duration: 25s; 
     }
+}
+
+
+.relato-footer-acoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto; 
+}
+
+.botoes-adm {
+    display: flex;
+    gap: 10px;
+}
+
+.botoes-adm button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 0.8rem;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.btn-editar { color: #480544; font-weight: bold; }
+.btn-excluir { color: #b00020; font-weight: bold; }
+
+.btn-editar:hover, .btn-excluir:hover {
+    opacity: 0.7;
+    transform: scale(1.05);
+}
+
+.relato-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 220px; 
 }

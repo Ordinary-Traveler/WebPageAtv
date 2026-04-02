@@ -3,13 +3,14 @@ function carregarRelatos() {
     const lista = document.getElementById("lista-relatos");
     lista.innerHTML = "";
 
-    if (relatos.length === 0) return;
+    if (relatos.length === 0) {
+        lista.innerHTML = "<p style='text-align:center; color:#999;'>Nenhum relato publicado ainda.</p>";
+        return;
+    }
 
-    // Criamos um "palco" para o movimento
     const scrollTrack = document.createElement("div");
     scrollTrack.classList.add("scroll-track");
 
-    // Função para criar o card
     const criarCard = (r, i) => {
         return `
             <article class="relato-card">
@@ -20,21 +21,22 @@ function carregarRelatos() {
                 <p class="relato-texto">"${r.texto}"</p>
                 <div class="relato-footer-acoes">
                     <span class="tag-superacao">Superação</span>
+                    <div class="botoes-adm">
+                        <button class="btn-editar" onclick="editarRelato(${i})">Editar</button>
+                        <button class="btn-excluir" onclick="deletarRelato(${i})">Excluir</button>
+                    </div>
                 </div>
             </article>
         `;
     };
 
-    // Para o loop ser infinito, precisamos de pelo menos dois conjuntos de cards
     const conteudoCards = relatos.map((r, i) => criarCard(r, i)).join('');
     
-    // Inserimos duas vezes para criar a ilusão de continuidade
     scrollTrack.innerHTML = conteudoCards + conteudoCards;
     
     lista.appendChild(scrollTrack);
 }
 
-// No seu arquivo relatos.js
 document.getElementById("formRelato").addEventListener("submit", function(e) {
     e.preventDefault();
     
@@ -43,11 +45,9 @@ document.getElementById("formRelato").addEventListener("submit", function(e) {
     const idade = document.getElementById("idade").value;
     const texto = document.getElementById("texto").value;
 
-    // Bloqueia o botão para evitar cliques múltiplos acidentais
     botao.textContent = "Publicando...";
     botao.disabled = true;
 
-    // Simula o tempo de envio
     setTimeout(() => {
         const relatos = JSON.parse(localStorage.getItem("relatos")) || [];
         
@@ -60,12 +60,12 @@ document.getElementById("formRelato").addEventListener("submit", function(e) {
 
         localStorage.setItem("relatos", JSON.stringify(relatos));
 
-        e.target.reset(); // Limpa os campos
+        e.target.reset(); 
         botao.textContent = "Publicar Relato";
         botao.disabled = false;
 
         alert("Relato publicado com sucesso!");
-        carregarRelatos(); // Atualiza a lista na tela
+        carregarRelatos(); 
     }, 1000);
 });
 
@@ -91,5 +91,4 @@ function deletarRelato(index) {
     }
 }
 
-// Inicializar ao carregar a página
 document.addEventListener("DOMContentLoaded", carregarRelatos);

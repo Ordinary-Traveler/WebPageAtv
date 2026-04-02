@@ -14,7 +14,6 @@
     color: var(--text-color);
 }
 
-/* Tipografia e Títulos */
 .intro-section {
     text-align: center;
     margin-bottom: 50px;
@@ -32,7 +31,6 @@ h1 {
     font-size: 1.1rem;
 }
 
-/* --- GRID DE VÍDEOS CLEAN --- */
 .videos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -42,10 +40,10 @@ h1 {
 
 .video-card {
     background: var(--white);
-    border-radius: 24px; /* Bordas mais orgânicas */
+    border-radius: 24px;
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    border: 1px solid #f0f0f0; /* Borda fininha substitui a sombra pesada */
+    border: 1px solid #f0f0f0; 
 }
 
 .video-wrapper {
@@ -82,24 +80,22 @@ h1 {
     margin: 0;
 }
 
-/* Hover Interativo e Elegante */
 .video-card:hover {
     transform: translateY(-10px);
     border-color: var(--primary-color);
-    box-shadow: 0 20px 40px rgba(72, 5, 68, 0.05); /* Sombra colorida bem sutil */
+    box-shadow: 0 20px 40px rgba(72, 5, 68, 0.05); 
 }
 
-/* --- REFINO NOS CARDS DE TEXTO (INFO-CARD) --- */
 .info-card {
     background: var(--white);
     padding: 40px;
     border-radius: 28px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03); /* Quase invisível */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03); 
     border: 1px solid #f5f5f5;
     border-top: 8px solid var(--primary-color); 
 }
 
-/* Lista mais espaçada e moderna */
+
 .info-card li {
     padding: 15px 0;
     border-bottom: 1px solid #f9f9f9;
@@ -107,7 +103,7 @@ h1 {
 }
 
 .info-card li strong {
-    display: block; /* Nome da violência em cima, descrição embaixo */
+    display: block; 
     margin-bottom: 2px;
     color: var(--primary-color);
 }
