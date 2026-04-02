@@ -15,3 +15,7 @@ Atividade em conjunto para simular um portfólio baseado no exemplo exposto.
 ### 3.  S.O.S Mulher Website (Trabalho Final)
 Desenvolvimento de uma pagina web, e suas funcionalidades basicas, baseado no tema a escolha do grupo
 * **🔗[Acessar S.O.S Mulher (Em desenvolvimento)](https://ordinary-traveler.github.io/WebPageAtv/projeto_final_desenvolvimento_frontend_armazenamento/)**
+
+### 4. Lista (Atividade 4 - JS)
+Desenvolvimento de uma lista simples. Possibilidade de adição, remoção e marcar como 'feito'
+* **🔗[Acessar Lista (Completo)](https://ordinary-traveler.github.io/WebPageAtv/atividade04/)**
